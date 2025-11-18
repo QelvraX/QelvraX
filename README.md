@@ -31,6 +31,3 @@ All content in this repository is for educational and authorized testing purpose
 
 ## 📬 Secure Communication
 For collaboration opportunities or disclosure of security vulnerabilities, please contact me via email: QelvraX@proton.me
-
----
-*"With great power comes great responsibility. All actions conducted within legal boundaries and with proper authorization."*
