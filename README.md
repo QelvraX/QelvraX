@@ -1,3 +1,5 @@
+<span style="color:#39FF14; font-weight:bold;">QelvraX</span>
+
 # 👤 QelvraX - Cybersecurity Researcher
 
 [![Email](https://img.shields.io/badge/Email-QelvraX@proton.me-purple?style=flat-square&logo=protonmail)](mailto:QelvraX@proton.me)
