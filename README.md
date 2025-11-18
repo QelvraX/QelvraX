@@ -1,6 +1,46 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=1200&pause=700&color=39FF14&center=true&vCenter=true&width=600&lines=QelvraX" alt="Typing SVG" />
+<svg width="600" height="120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .txt {
+      fill: #39FF14;
+      font-size: 48px;
+      font-family: "Fira Code", monospace;
+      font-weight: 700;
+      animation: blink 0.9s infinite steps(2, start);
+    }
+
+    @keyframes blink {
+      50% { opacity: 0.15; }
+    }
+
+    .glitch {
+      animation: glitch 1s infinite;
+    }
+
+    @keyframes glitch {
+      0% { transform: translate(0,0); }
+      15% { transform: translate(-2px, 1px); }
+      30% { transform: translate(2px, -1px); }
+      45% { transform: translate(-1px, -2px); }
+      60% { transform: translate(1px, 2px); }
+      75% { transform: translate(-1px, 1px); }
+      100% { transform: translate(0,0); }
+    }
+  </style>
+
+  <!-- لایه‌های گلیچ -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        class="txt glitch" fill="#39FF1499">QelvraX</text>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        class="txt glitch" fill="#39FF1477">QelvraX</text>
+
+  <!-- لایه اصلی -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        class="txt glitch">QelvraX</text>
+
+</svg>
 </p>
+
 
 # 👤 QelvraX - Cybersecurity Researcher
 
