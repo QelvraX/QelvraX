@@ -19,24 +19,6 @@
 - **Tools**: Kali Linux, OWASP ZAP, John the Ripper, Hydra
 - **Cloud**: AWS Security, Azure Defender, GCP Security
 
-## 📁 Notable Operations
-<!-- Add your projects here once you populate your GitHub -->
-<!-- 
-### 🛡️ Project Name
-_Description of your security research or tool_
-- Technical details
-- Technologies used
-- Key findings or features
-
-### 🔍 Another Project
-_Brief description_
-- Highlights
-- Impact or application
--->
-
-## 🏆 Recent Reconnaissance
-<!-- You can add badges from platforms like HackTheBox, TryHackMe, etc. -->
-<!-- ![HackTheBox Badge](link-to-badge) -->
 
 ## 📡 Active Frequencies
 - Monitoring emerging threats and attack vectors
