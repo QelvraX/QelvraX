@@ -1,68 +1,54 @@
-                 >>> Q E L V R A X — SYSTEM NODE: 0x01 <<<
--------------------------------------------------------------------------------
-# ADVANCED NEON TERMINAL — COMPLEX / HACKER / HIGH DETAIL
--------------------------------------------------------------------------------
+# 👤 QelvraX - Cybersecurity Researcher
 
-$ boot -seq --deep
-  ↳ probing hardware................. [OK]
-  ↳ scanning memory map.............. [OK]
-  ↳ loading offensive modules........ [OK]
-  ↳ enabling neon-core............... [OK]
-  ↳ initializing identity............ [OK]
+[![Email](https://img.shields.io/badge/Email-QelvraX@proton.me-purple?style=flat-square&logo=protonmail)](mailto:QelvraX@proton.me)
 
-SYSTEM ONLINE // SESSION ID: 0xA9F1-CX22-FF11
-USER: qelvrax
-MODE: OFFENSIVE-OPERATIONS
-ARCH: x86_64
-KERNEL: 6.x.x-amd64
--------------------------------------------------------------------------------
+>Welcome to my digital fortress. I'm a cybersecurity professional specializing in penetration testing, vulnerability research, and defensive security measures. Here you'll find my research, tools, and contributions to the infosec community.
 
-$ system --diagnostics
-  cpu      : ████████████ 97%
-  ram      : ████████▌    78%
-  entropy  : ████████████ 99%
-  threat   : ACTIVE (4 nodes detected)
-  signals  : encrypted / stable
+## 🧠 Areas of Expertise
+- Penetration Testing & Ethical Hacking
+- Vulnerability Assessment & Exploitation
+- Network Security & Forensics
+- Web Application Security
+- Reverse Engineering & Malware Analysis
+- Red Team Operations
+- Secure Coding Practices
 
--------------------------------------------------------------------------------
-$ cap --level-3 --extended
-  • vulnerability-research         • protocol-dissection
-  • exploit-development            • network-intrusion mapping
-  • reverse-engineering (adv)      • binary deconstruction
-  • fuzzing-engine ops             • intel scraping / enumeration
-  • malware-analysis (static/dyn)  • traffic manipulation
+## 🔧 Current Arsenal
+- **Languages**: Python, Bash, JavaScript, C++, SQL
+- **Frameworks**: Metasploit, Burp Suite, Nmap, Wireshark
+- **Tools**: Kali Linux, OWASP ZAP, John the Ripper, Hydra
+- **Cloud**: AWS Security, Azure Defender, GCP Security
 
--------------------------------------------------------------------------------
-$ skills --matrix --render:neon
-  recon                  ████████████ 90%
-  exploit-dev            ████████████ 90%
-  fuzzing-engines        ████████████ 90%
-  traffic-analysis       ████████████ 90%
-  reverse-engineering    ████████████ 90%
-  python/bash            ████████████ 90%
+## 📁 Notable Operations
+<!-- Add your projects here once you populate your GitHub -->
+<!-- 
+### 🛡️ Project Name
+_Description of your security research or tool_
+- Technical details
+- Technologies used
+- Key findings or features
 
--------------------------------------------------------------------------------
-$ toolkit --core --sorted
-  amass      eyewitness   gobuster    feroxbuster   sqlmap
-  nmap       nuclei       hydra       burpsuite     radare2
-  masscan    mitmproxy    ffuf        ghidra        gdb
+### 🔍 Another Project
+_Brief description_
+- Highlights
+- Impact or application
+-->
 
--------------------------------------------------------------------------------
-$ processes --trace
-  [1112] recon-daemon         (active)
-  [1349] exploit-lab          (compiling payload)
-  [2014] intel-collector      (monitoring)
-  [2844] packet-sniffer       (live)
-  [3221] automation-engine    (loop)
+## 🏆 Recent Reconnaissance
+<!-- You can add badges from platforms like HackTheBox, TryHackMe, etc. -->
+<!-- ![HackTheBox Badge](link-to-badge) -->
 
--------------------------------------------------------------------------------
-$ contact --secure
-  Email: QelvraX@proton.me
+## 📡 Active Frequencies
+- Monitoring emerging threats and attack vectors
+- Contributing to open-source security tools
+- Documenting findings and methodologies
+- Participating in bug bounty programs
 
--------------------------------------------------------------------------------
-$ shutdown --secure-wipe
-  clearing cache........... [OK]
-  terminating daemons...... [OK]
-  session closed.
-```
+## 🔐 Security Notice
+All content in this repository is for educational and authorized testing purposes only. Unauthorized use of any materials is prohibited and may violate applicable laws.
 
+## 📬 Secure Communication
+For collaboration opportunities or disclosure of security vulnerabilities, please contact me via email: QelvraX@proton.me
+
+---
+*"With great power comes great responsibility. All actions conducted within legal boundaries and with proper authorization."*
