@@ -1,78 +1,39 @@
-<svg width="900" height="240" xmlns="http://www.w3.org/2000/svg">
+<svg width="750" height="200" viewBox="0 0 750 200" xmlns="http://www.w3.org/2000/svg">
 
   <defs>
 
-    <!-- Chromatic Aberration -->
-    <filter id="chromatic">
-      <feColorMatrix type="matrix" values="
-         1 0 0 0 0
-         0 0 0 0 0
-         0 0 0 0 0
-         0 0 0 1 0" result="r"/>
-      <feOffset dx="-3" dy="-2" in="r" result="rShift"/>
-
-      <feColorMatrix type="matrix" values="
-         0 0 0 0 0
-         0 0 0 0 0
-         0 0 1 0 0
-         0 0 0 1 0" result="b"/>
-      <feOffset dx="3" dy="2" in="b" result="bShift"/>
-
-      <feBlend in="rShift" in2="bShift" mode="screen"/>
+    <filter id="glitch">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10"/>
     </filter>
 
-    <!-- VHS Distortion -->
-    <filter id="vhs">
-      <feTurbulence type="turbulence" baseFrequency="0.8" numOctaves="4" result="f"/>
-      <feDisplacementMap in="SourceGraphic" in2="f" scale="12"/>
-    </filter>
+    <mask id="scanMask">
+      <rect width="750" height="200" fill="black"/>
 
-    <!-- Wave Distortion -->
-    <filter id="wave">
-      <feTurbulence type="turbulence" baseFrequency="0.012 0.03" numOctaves="2" result="n"/>
-      <feDisplacementMap in="SourceGraphic" in2="n" scale="20"/>
-    </filter>
+      <rect width="750" height="40" fill="white" opacity="0.35">
+        <animate attributeName="y" values="-80;200;-80" dur="0.35s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="-200;750;-200" dur="0.55s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect width="750" height="40" fill="white" opacity="0.35">
+        <animate attributeName="y" values="-120;200;-120" dur="0.28s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="750;-200;750" dur="0.45s" repeatCount="indefinite"/>
+      </rect>
+
+      <rect width="750" height="40" fill="white" opacity="0.35">
+        <animate attributeName="y" values="200;-120;200" dur="0.31s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="-200;750;-200" dur="0.38s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
 
   </defs>
 
-  <!-- CHROMATIC -->
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
-        font-size="120" font-family="monospace"
-        fill="#39FF14AA" filter="url(#chromatic)"
-        style="animation: jitter1 0.1s infinite;">
+
+  <text x="50%" y="50%" text-anchor="middle" dy="0.35em"
+        style="fill:#39FF14; font-family:'Fira Code'; font-size:70px; font-weight:700;
+               filter:url(#glitch);" 
+        mask="url(#scanMask)">
     QelvraX
   </text>
-
-  <!-- VHS -->
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
-        font-size="120" font-family="monospace"
-        fill="#39FF1470" filter="url(#vhs)"
-        style="animation: jitter2 0.22s infinite;">
-    QelvraX
-  </text>
-
-  <!-- MAIN -->
-  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
-        font-size="120" font-family="monospace"
-        fill="#39FF14" filter="url(#wave)">
-    QelvraX
-  </text>
-
-  <style>
-    @keyframes jitter1 {
-      0% { transform: translate(-2px, -1px); }
-      25% { transform: translate(2px, 2px); }
-      50% { transform: translate(-3px, 1px); }
-      75% { transform: translate(1px, -2px); }
-      100% { transform: translate(0,0); }
-    }
-    @keyframes jitter2 {
-      0% { transform: translate(2px, 2px); opacity: 0.6; }
-      25% { transform: translate(-3px, -2px); opacity: 0.35; }
-      50% { transform: translate(4px, -3px); opacity: 0.7; }
-      75% { transform: translate(-2px, 1px); opacity: 0.45; }
-      100% { transform: translate(0,0); opacity: 1; }
-    }
-  </style>
 
 </svg>
