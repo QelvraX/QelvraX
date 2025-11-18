@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="./glitch.svg" width="600" />
+</p>
 
 # 👤 QelvraX - Cybersecurity Researcher
 
