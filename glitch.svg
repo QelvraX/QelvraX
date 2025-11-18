@@ -1,40 +1,78 @@
-<svg width="600" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="240" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Chromatic Aberration -->
+    <filter id="chromatic">
+      <feColorMatrix type="matrix" values="
+         1 0 0 0 0
+         0 0 0 0 0
+         0 0 0 0 0
+         0 0 0 1 0" result="r"/>
+      <feOffset dx="-3" dy="-2" in="r" result="rShift"/>
+
+      <feColorMatrix type="matrix" values="
+         0 0 0 0 0
+         0 0 0 0 0
+         0 0 1 0 0
+         0 0 0 1 0" result="b"/>
+      <feOffset dx="3" dy="2" in="b" result="bShift"/>
+
+      <feBlend in="rShift" in2="bShift" mode="screen"/>
+    </filter>
+
+    <!-- VHS Distortion -->
+    <filter id="vhs">
+      <feTurbulence type="turbulence" baseFrequency="0.8" numOctaves="4" result="f"/>
+      <feDisplacementMap in="SourceGraphic" in2="f" scale="12"/>
+    </filter>
+
+    <!-- Wave Distortion -->
+    <filter id="wave">
+      <feTurbulence type="turbulence" baseFrequency="0.012 0.03" numOctaves="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="20"/>
+    </filter>
+
+  </defs>
+
+  <!-- CHROMATIC -->
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
+        font-size="120" font-family="monospace"
+        fill="#39FF14AA" filter="url(#chromatic)"
+        style="animation: jitter1 0.1s infinite;">
+    QelvraX
+  </text>
+
+  <!-- VHS -->
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
+        font-size="120" font-family="monospace"
+        fill="#39FF1470" filter="url(#vhs)"
+        style="animation: jitter2 0.22s infinite;">
+    QelvraX
+  </text>
+
+  <!-- MAIN -->
+  <text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle"
+        font-size="120" font-family="monospace"
+        fill="#39FF14" filter="url(#wave)">
+    QelvraX
+  </text>
+
   <style>
-    .txt {
-      fill: #39FF14;
-      font-size: 48px;
-      font-family: monospace;
-      font-weight: 700;
-      animation: blink 0.9s infinite steps(2, start);
-    }
-
-    @keyframes blink {
-      50% { opacity: 0.15; }
-    }
-
-    .glitch {
-      animation: glitch 1s infinite;
-    }
-
-    @keyframes glitch {
-      0% { transform: translate(0,0); }
-      15% { transform: translate(-2px, 1px); }
-      30% { transform: translate(2px, -1px); }
-      45% { transform: translate(-1px, -2px); }
-      60% { transform: translate(1px, 2px); }
-      75% { transform: translate(-1px, 1px); }
+    @keyframes jitter1 {
+      0% { transform: translate(-2px, -1px); }
+      25% { transform: translate(2px, 2px); }
+      50% { transform: translate(-3px, 1px); }
+      75% { transform: translate(1px, -2px); }
       100% { transform: translate(0,0); }
     }
+    @keyframes jitter2 {
+      0% { transform: translate(2px, 2px); opacity: 0.6; }
+      25% { transform: translate(-3px, -2px); opacity: 0.35; }
+      50% { transform: translate(4px, -3px); opacity: 0.7; }
+      75% { transform: translate(-2px, 1px); opacity: 0.45; }
+      100% { transform: translate(0,0); opacity: 1; }
+    }
   </style>
-
-  <!-- لایه‌های گلیچ -->
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        class="txt glitch" fill="#39FF1499">QelvraX</text>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        class="txt glitch" fill="#39FF1477">QelvraX</text>
-
-  <!-- لایه اصلی -->
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-        class="txt glitch">QelvraX</text>
 
 </svg>
