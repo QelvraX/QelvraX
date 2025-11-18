@@ -1,4 +1,6 @@
-<span style="color:#39FF14; font-weight:bold;">QelvraX</span>
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=35&duration=1200&pause=700&color=39FF14&center=true&vCenter=true&width=600&lines=QelvraX" alt="Typing SVG" />
+</p>
 
 # 👤 QelvraX - Cybersecurity Researcher
 
