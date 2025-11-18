@@ -1,12 +1,14 @@
 <svg width="750" height="200" viewBox="0 0 750 200" xmlns="http://www.w3.org/2000/svg">
-  
+
   <defs>
 
+    <!-- گلیچ -->
     <filter id="glitch">
       <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" result="noise"/>
       <feDisplacementMap in="SourceGraphic" in2="noise" scale="10"/>
     </filter>
 
+    <!-- گلو نئونی -->
     <filter id="neon">
       <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
@@ -15,6 +17,7 @@
       </feMerge>
     </filter>
 
+    <!-- ماسک اسکن‌لاین RGB -->
     <mask id="scanMask">
       <rect width="750" height="200" fill="black"/>
 
@@ -34,18 +37,32 @@
       </rect>
     </mask>
 
+    <!-- PULSE Animation -->
+    <style>
+      @keyframes pulseGlow {
+        0%   { opacity: 0.75; filter: drop-shadow(0 0 6px #39ff14); }
+        50%  { opacity: 1.0;  filter: drop-shadow(0 0 13px #39ff14); }
+        100% { opacity: 0.75; filter: drop-shadow(0 0 6px #39ff14); }
+      }
+    </style>
+
   </defs>
 
 
+
+
+  <!-- لایه گلو نئونی + PULSE -->
   <text x="50%" y="50%" text-anchor="middle" dy="0.35em"
-        style="fill:#39ff14; opacity:0.8;
+        style="fill:#39ff14; opacity:0.85;
                font-family:'Fira Code'; font-size:75px; font-weight:900;
-               filter:url(#neon);" >
+               filter:url(#neon);
+               animation:pulseGlow 1.6s infinite ease-in-out;">
     QelvraX
   </text>
 
+  <!-- لایه گلیچ + اسکن‌لاین -->
   <text x="50%" y="50%" text-anchor="middle" dy="0.35em"
-        style="fill:#7CFF52; 
+        style="fill:#7CFF52;
                font-family:'Fira Code'; font-size:75px; font-weight:900;
                filter:url(#glitch);" 
         mask="url(#scanMask)">
